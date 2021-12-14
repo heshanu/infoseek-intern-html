@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">]
+
+
+		table{
+			border-radius: 10px;
+			background-color:yellow;
+
+		}
+
+		table button{
+			width:100%;
+		}
+
+		table td{
+			margin-top: 10px:
+			margin-bottom:10px; 
+		}
+		body{
+			background-color: yellow;	
+		}
+	</style>
+	<script type="text/javascript">
+		//var uname=document.getElementById('uname').value;
+		//console.log(uname);
+		function fn1(){
+
+				var str=document.getElementById('uname').value;
+				var g=document.getElementById('gender').value;
+				var dob=document.getElementById('date1').value;
+				var street=document.getElementById('street').value;
+				var contact=document.getElementById('contact').value;
+				var address=document.getElementById('address').value;
+				
+				
+				if(str==" " || g==" " || dob== ""|| street=="" || contact==" " || address==" "){
+					alert("please fill all fields");
+					return false;
+				}
+
+				else{
+				alert("Custmer name is"+"  "+str+","+"and"+" "+"gender is"+"  "+g+","+"Street"+"  "+"date of Birth"+"  " +street+","+"contact number"+"  "+contact+","+"Address is"+"  "+address);
+				//document.log(str);
+					
+				}
+			}
+		
+		
+	</script>
+</head>
+
+<body>
+	
+
+<form style="margin-left: 600px;margin-right: 500px;margin-top:200px">
+		<h1 style="">Registration Form</H1>
+			<legend>BIO DATA</legend>
+	<table border="	margin-left: 500px">
+	
+		<tr>
+			<td><label>Name</label></td>
+			<td><input type="text" name="uname" id="uname" required></td>
+		</tr>
+
+		<tr>
+			<td><label>Gender            </label></td>
+			<td><select id="gender" name="gender" required>
+				<option value="male">male</option>
+				<option value="male">Female</option>
+			</select>
+			</td>
+		</tr>
+
+		<tr>
+			<td><label>Date of Birth     </label></td>
+			<td><input type="text" name="date1" id="date1" required></td>
+		</tr>
+
+		<tr>
+			<td><label>Street           </label></td>
+			<td><input type="text" name="Street" id="street" required></td>
+		</tr>
+
+		<tr>
+			<td><label>Contact          </label></td>
+			<td><input type="text" name="contact" id="contact" required></td>
+		</tr>
+
+		<tr>
+			<td><label>Address           </label></td>
+			<td><input type="text" name="address" id="address" required></td>
+		</tr>
+
+		<tr>
+			<td>	<button onclick="return fn1();">Click</button></td>
+			<td>	<input type="reset"></td>
+		</tr>
+	</table> 
+</form>
+	
+
+</body>
+
+</html>
