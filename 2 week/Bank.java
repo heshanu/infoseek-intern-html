@@ -6,6 +6,18 @@ private String bankAddress;
 private String contactNo;
 private char status;
 
+public Bank(int bankId,String bankName,String bankAddress,String contactNo,char status){
+	this.bankId=bankId;
+	this.bankName=bankName;
+	this.bankAddress=bankAddress;
+	this.contactNo=contactNo;
+	this.status=status;
+}
+
+public Bank(char status){
+	this.status=status;
+}
+
 
 public void setBankId(int bankId){
 	this.bankId=bankId;

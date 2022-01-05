@@ -2,12 +2,9 @@ public class BankMain{
 
 public static void main(String [] ar){
 
-	Bank boc=new Bank();
-	boc.setBankId(1);
-	boc.setBankName("bank of ceylon");
-	boc.setBankAddress("hikka");
-	boc.setContactNo("21121");
-	boc.setStatus('A');
+	Bank boc=new Bank(1,"fdf","hikka","dfdfd",'A');
+	Bank com=new Bank(1,"commercial","hikka","ddddd",'A');
+	Bank st=new Bank('A');
 
 	System.out.println(boc.getBankId());
 	System.out.println(boc.getBankName());
@@ -17,13 +14,6 @@ public static void main(String [] ar){
 	System.out.println(boc.saving("com"));
 
 	System.out.println("====================");	
-	
-	Bank com=new Bank();
-	com.setBankId(2);
-	com.setBankName("Commericail");
-	com.setBankAddress("hikka");
-	com.setContactNo("321");
-	com.setStatus('A');
 
 	System.out.println(com.getBankId());
 	System.out.println(com.getBankName());
@@ -32,7 +22,10 @@ public static void main(String [] ar){
 	System.out.println(com.getStatus());
 	//com.saving("boc");
 	System.out.println(boc.saving("boc"));
-
+	
+	System.out.println(st.getStatus());
+	
+	
 
 	}
 }
